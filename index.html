@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width">
   <title>Profile Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -35,8 +37,7 @@
           <img src="profile_pic.jpg" alt="Profile Picture" width=400>
         </div>
         <div class="item2">
-          <p> I am an aspiring software engineer living in Queens, New York. I graduated back in 2019 with a bachelor’s degree in Business Administration for Health Professionals from the Macaulay Honor’s Program at Brooklyn College. During my years in college, I thought my future would be in medicine and focused on developing my skills in the healthcare field. After graduation,  I worked as a medical scribe.</p>
-          <p> Throughout the pandemic, I had the opportunity to reflect upon my various experiences in both healthcare and coding. I decided I wanted to work as a software engineer so, I started the engineering immersion program at Thinkful this past fall.</p>
+          <p> FullStack developer with an extensive background in building websites from the ground up. Professional strengths include written and verbal communication and creative problem-solving.</p>
         </div>
       </div>
     </section>
@@ -47,16 +48,17 @@
       <h3>About Me!</h3>
       <div class="group">
         <div class="item">
-          <p> It is nice to use a website that is both functional and beautiful. I have always wondered what makes a useful website. I am excited to learn both the front end and back end of software development. I look forward to collaborating with others to create beautiful projects.</p>
-          <p> Outside of software engineering, I enjoy drawing and learning languages. I draw digitally consistently and find it is an excellent way to relax. I am conversationally fluent in Bengali and Hindi. I am currently self-learning Korean and hope to be fluent one day. </p> 
+          <p> I recently graduated from Thinkful’s Engineering Immersion program where I Committed 50-60 hours per week to learn both frontend and backend technologies. Worked and learned alongside many other talented JavaScript developers, met with senior engineers daily to discuss the finer points of software development, and completed fully functioning full-stack web applications. </p>
+          <p> I have over 4 years of experience as a pre-med student preparing for Medical School. However, through my work as a medical scribe, I have gained a newfound interest in programming and realized that medicine is not for me. I am eager to transfer my goal of helping others through medicine, to helping others by building useful applications.</p>
         </div>
         <div class="item">
           <!--unsure what services, or skills to put down, so put in general ideas-->
-          <p> List of Services Provided to be updated</p> 
+          <p> Technical Skills</p> 
           <ol>
-            <li> Fluent in Javascript, HTML and CSS </li>
-            <li> Proficient in REACT</li>
-            <li> Create beautiful webpages</li>
+            <li> <strong class = 'text_style'>Front End</strong>: JavaScript ES6, React, React Hooks, Redux, jQuery, HTML5, CSS3 </li>
+            <li> <strong class = 'text_style'>Back End</strong>: Node.js, PostgreSQL, Express, DBeaver </li>
+            <li> <strong class = 'text_style'>Additional Tools</strong>: Mocha, Chai, Webpack, Git, GitHub, Heroku, Enzyme </li>
+            <li> <strong class = 'text_style'>Additional Skills</strong>: RESTful APIs, Unit Testing, Algorithms, Data Structures, Node Package Manager(NPM)</li>
           </ol>
         </div>
       </div>
@@ -115,25 +117,47 @@
       <div class="group">
         <div class="item">
           <form action="https://formspree.io/f/mdopdoyz" method="POST">
-
-            <label>
-              Your email:
-              <input type="text" name="_replyto">
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-  
-            <button type="submit">Send</button>
-          </form>
+            <fieldset>
+              <legend> I would love to hear from you!</legend>
+              <div>
+                <label for="name">Name:</label>
+                <input
+                  id="name"
+                  type="text"
+                  autofocus="on"
+                  name="personName"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  type="text"
+                  name="personEmail"
+                  placeholder="Email Address"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                />
+              </div>
+              <div>
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  required
+                  name="personMessage"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+              <button type="submit">Send</button>
+              <button type="reset">Reset</button>
+            </fieldset>
         </div>
         <div class="item">
           <p> Please feel free to contact or follow me: </p>
-          <ul>
-            <li>Email: hoquen0397@gmail.com</li>
+          <ul class = 'contacts'>
+            <li> <a href="mailto: hoquen0397@gmail.com" target="_blank"> Email</a> </li>
             <li> <a href="https://www.linkedin.com/in/nishat-hoque-30b08b10a/" target="_blank">LinkedIn</a></li>
-            <li> <a href="https://github.com/Nishat322" target="_blank">GitHub</a></li>
+            <li> <a href="https://github.com/Nishat322" target="_blank">GitHub</a> </li>
           </ul>
           <img src="google_map.jpg" alt="Map of Queens" >
         </div>
