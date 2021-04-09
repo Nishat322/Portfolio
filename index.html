@@ -11,172 +11,173 @@
 </head>
 
 <body>
-  <header>
+  <header id = 'header'>
+    <div class = 'container'>
     <!-- Title of Webpage and subtitle-->
-    <div>
       <h1> Nishat Hoque </h1>
       <h2> Software Engineer</h2>
-    </div> 
     <!--Navigation Bar-->
-    <nav>
-      <ul>
-        <li><a href="#intro"> Introduction </a></li>
-        <li><a href="#about"> About </a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact"> Contact </a></li>
-      </ul>
-    </nav>
+      <nav id = 'navbar'>
+        <ul>
+          <li><a href='#intro'> Introduction </a></li>
+          <li><a href='#about'> About </a></li>
+          <li><a href='#portfolio'>Portfolio</a></li>
+          <li><a href='#contact'> Contact </a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <!-- Intro Section-->
-    <section id="intro">
-      <h3> Hello, I'm Nishat! </h3>
-      <div class="group">
-        <div class="item">
-          <img src="profile_pic.jpg" alt="Profile Picture" width=400>
+    <div class = 'container'>
+      <!-- Intro Section-->
+      <section id="intro">
+        <h3> Hello, I'm Nishat! </h3>
+        <div class="group">
+          <div class="item intro_image">
+            <img src="profile_pic.jpg" alt="Profile Picture">
+          </div>
+          <div class="item2 intro_para">
+            <p> FullStack developer with an extensive background in building websites from the ground up. Professional strengths include written and verbal communication and creative problem-solving.</p>
+          </div>
         </div>
-        <div class="item2">
-          <p> FullStack developer with an extensive background in building websites from the ground up. Professional strengths include written and verbal communication and creative problem-solving.</p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
-    <!--About Section-->
-    <section id="about">
-      <h3>About Me!</h3>
-      <div class="group">
-        <div class="item">
-          <p> I recently graduated from Thinkful’s Engineering Immersion program where I Committed 50-60 hours per week to learn both frontend and backend technologies. Worked and learned alongside many other talented JavaScript developers, met with senior engineers daily to discuss the finer points of software development, and completed fully functioning full-stack web applications. </p>
-          <p> I have over 4 years of experience as a pre-med student preparing for Medical School. However, through my work as a medical scribe, I have gained a newfound interest in programming and realized that medicine is not for me. I am eager to transfer my goal of helping others through medicine, to helping others by building useful applications.</p>
+      <hr>
+      <!--About Section-->
+      <section id="about">
+        <h3>About Me!</h3>
+        <div class="group">
+          <div class="item">
+            <p> I recently graduated from Thinkful’s Engineering Immersion program where I Committed 50-60 hours per week to learn both frontend and backend technologies. Worked and learned alongside many other talented JavaScript developers, met with senior engineers daily to discuss the finer points of software development, and completed fully functioning full-stack web applications. </p>
+            <p> I have over 4 years of experience as a pre-med student preparing for Medical School. However, through my work as a medical scribe, I have gained a newfound interest in programming and realized that medicine is not for me. I am eager to transfer my goal of helping others through medicine, to helping others by building useful applications.</p>
+          </div>
+          <div class="item about_list">
+            <!--unsure what services, or skills to put down, so put in general ideas-->
+            <p> Technical Skills</p> 
+            <ol>
+              <li> <span class = 'tech_heading'>Front End:</span> JavaScript ES6, React, React Hooks, Redux, jQuery, HTML5, CSS3 </li>
+              <li> <span class = 'tech_heading'>Back End:</span> Node.js, PostgreSQL, Express, DBeaver </li>
+              <li> <span class = 'tech_heading'>Additional Tools:</span> Mocha, Chai, Webpack, Git, GitHub, Heroku, Enzyme </li>
+              <li> <span class = 'tech_heading'>Additional Skills:</span> RESTful APIs, Unit Testing, Algorithms, Data Structures, Node Package Manager(NPM)</li>
+            </ol>
+          </div>
         </div>
-        <div class="item">
-          <!--unsure what services, or skills to put down, so put in general ideas-->
-          <p> Technical Skills</p> 
-          <ol>
-            <li> <strong class = 'text_style'>Front End</strong>: JavaScript ES6, React, React Hooks, Redux, jQuery, HTML5, CSS3 </li>
-            <li> <strong class = 'text_style'>Back End</strong>: Node.js, PostgreSQL, Express, DBeaver </li>
-            <li> <strong class = 'text_style'>Additional Tools</strong>: Mocha, Chai, Webpack, Git, GitHub, Heroku, Enzyme </li>
-            <li> <strong class = 'text_style'>Additional Skills</strong>: RESTful APIs, Unit Testing, Algorithms, Data Structures, Node Package Manager(NPM)</li>
-          </ol>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <hr>
-    <!--Portfolio-->
-    <section id="portfolio">
-      <h3> Portfolio</h3>
-      <div class="group">
-        <div class="item">
-          <h4>Spaced - Repetition</h4>
-          <p> Language learning application that allows users to learn new words through spaced-repetition, an evidence based learning technique.</p>
-          <ul class = 'portfolio_list'>
-            <li>Link to <a href="https://github.com/Nishat322/spaced-client" target="_blank">Client Repo</a> </li>
-            <li>Link to <a href="https://github.com/Nishat322/spaced-api" target="_blank">Server Repo</a></li>
-            <li>Link to <a href="https://spaced-client-psi.vercel.app/" target="_blank">Live Application</a></li>
-          </ul>
-          <ul class = 'portfolio_list'> <strong class = 'tech_stack'>Tech Stack: </strong>
-            <li> <strong>FrontEnd:</strong> ReactJS, React Router/ Context, HTML, CSS, Webpack, Cypress testing, Deployed Vercel</li>
-            <li> <strong>Backend:</strong> RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
-          </ul>
-          <img src = 'portfolio_images/spaced_img.png' alt = 'Spaced-Repetition-screenshot'>
+      <hr>
+      <!--Portfolio-->
+      <section id="portfolio">
+        <h3> Portfolio</h3>
+        <div class="group">
+          <div class="item">
+            <h4>Spaced - Repetition</h4>
+            <p> Language learning application that allows users to learn new words through spaced-repetition, an evidence based learning technique.</p>
+            <ul class = 'link_list'>
+              <li>Link to <a href="https://github.com/Nishat322/spaced-client" target="_blank">Client Repo</a> </li>
+              <li>Link to <a href="https://github.com/Nishat322/spaced-api" target="_blank">Server Repo</a></li>
+              <li>Link to <a href="https://spaced-client-psi.vercel.app/" target="_blank">Live Application</a></li>
+            </ul>
+            <ul class = 'tech_list'> Tech Stack: 
+              <li> FrontEnd: ReactJS, React Router/ Context, HTML, CSS, Webpack, Cypress testing, Deployed Vercel</li>
+              <li> Backend: RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
+            </ul>
+            <img src = 'portfolio_images/spaced_img.png' alt = 'Spaced-Repetition-screenshot'>
+          </div>
+          <div class="item">
+            <h4>Petful</h4>
+            <p> Emulates a pet adoption service. Uses a first come first serve algorithm to place users in a queue and allow them to adopt a pet when they reach the front of the line.</p>
+            <ul class = 'link_list'>
+              <li>Link to <a href="https://github.com/Nishat322/Petful-client" target="_blank">Client Repo</a> </li>
+              <li>Link to <a href="https://github.com/Nishat322/Petful-api" target="_blank">Server Repo</a></li>
+              <li>Link to <a href="https://petful-client-lyart.vercel.app/" target="_blank">Live Application</a></li>
+            </ul>
+            <ul class = 'tech_list'> Tech Stack: 
+              <li> FrontEnd: ReactJS, React Router/ Context, HTML, CSS, Webpack, Deployed Vercel</li>
+              <li> Backend: RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
+            </ul>
+            <img src = 'portfolio_images/petful_img.png' alt = 'Petful-screenshot'>
+          </div>
         </div>
-        <div class="item">
-          <h4>Petful</h4>
-          <p> Emulates a pet adoption service. Uses a first come first serve algorithm to place users in a queue and allow them to adopt a pet when they reach the front of the line.</p>
-          <ul class = 'portfolio_list'>
-            <li>Link to <a href="https://github.com/Nishat322/Petful-client" target="_blank">Client Repo</a> </li>
-            <li>Link to <a href="https://github.com/Nishat322/Petful-api" target="_blank">Server Repo</a></li>
-            <li>Link to <a href="https://petful-client-lyart.vercel.app/" target="_blank">Live Application</a></li>
-          </ul>
-          <ul class = 'portfolio_list'> <strong class = 'tech_stack'>Tech Stack: </strong>
-            <li> <strong>FrontEnd:</strong> ReactJS, React Router/ Context, HTML, CSS, Webpack, Deployed Vercel</li>
-            <li> <strong>Backend:</strong> RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
-          </ul>
-          <img src = 'portfolio_images/petful_img.png' alt = 'Petful-screenshot'>
+        <div class="group">
+          <div class="item">
+            <h4>Thoughtful</h4>
+            <p> Thoughtful is a CRUD application. Users can add their thoughts to a list.</p>
+            <ul class = 'link_list'>
+              <li>Link to <a href="https://github.com/Nishat322/thoughtful-client" target="_blank">Client Repo</a> </li>
+              <li>Link to <a href="https://github.com/Nishat322/thoughts-api" target="_blank">Server Repo</a></li>
+              <li>Link to <a href="https://thoughtful-client-nishat322.vercel.app/" target="_blank">Live Application</a></li>
+            </ul>
+            <ul class = 'tech_list'> Tech Stack: 
+              <li> FrontEnd: ReactJS, React Router/ Context, HTML, CSS, Webpack, Deployed Vercel</li>
+              <li> Backend: RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
+            </ul>
+            <img src = 'portfolio_images/thoughts_img.png' alt = 'Spaced-Repetition-screenshot'>
+          </div>
+          <div class="item">
         </div>
-      </div>
-      <div class="group">
-        <div class="item">
-          <h4>Thoughtful</h4>
-          <p> Thoughtful is a CRUD application. Users can add their thoughts to a list.</p>
-          <ul class = 'portfolio_list'>
-            <li>Link to <a href="https://github.com/Nishat322/thoughtful-client" target="_blank">Client Repo</a> </li>
-            <li>Link to <a href="https://github.com/Nishat322/thoughts-api" target="_blank">Server Repo</a></li>
-            <li>Link to <a href="https://thoughtful-client-nishat322.vercel.app/" target="_blank">Live Application</a></li>
-          </ul>
-          <ul class = 'portfolio_list'> <strong class = 'tech_stack'>Tech Stack: </strong>
-            <li> <strong>FrontEnd:</strong> ReactJS, React Router/ Context, HTML, CSS, Webpack, Deployed Vercel</li>
-            <li> <strong>Backend:</strong> RESTful API, Node, Express, PostgresSQL, Knex, Supertest, Mocha, Chai, Deployed Heroku</li>
-          </ul>
-          <img src = 'portfolio_images/thoughts_img.png' alt = 'Spaced-Repetition-screenshot'>
         </div>
-        <div class="item">
-      </div>
-      </div>
-    </section>
-    
-    <hr>
-    <!-- Contact Section-->
-    <article id="contact">
-      <h3> Contact </h3>
-      <div class="group">
-        <div class="item">
-          <form action="https://formspree.io/f/mdopdoyz" method="POST">
-            <fieldset>
-              <legend> I would love to hear from you!</legend>
-              <div>
-                <label for="name">Name:</label>
-                <input
-                  id="name"
-                  type="text"
-                  autofocus="on"
-                  name="personName"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <label for="email">Email:</label>
-                <input
-                  id="email"
-                  type="text"
-                  name="personEmail"
-                  placeholder="Email Address"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                />
-              </div>
-              <div>
-                <label for="message">Message:</label>
-                <textarea
-                  id="message"
-                  required
-                  name="personMessage"
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <button type="submit">Send</button>
-              <button type="reset">Reset</button>
-            </fieldset>
+      </section>
+      
+      <hr>
+      <!-- Contact Section-->
+      <section id="contact">
+        <h3> Contact </h3>
+        <div class="group">
+          <div class="item">
+            <form class = 'form' action="https://formspree.io/f/mdopdoyz" method="POST">
+              <fieldset>
+                <legend> I would love to hear from you!</legend>
+                <div>
+                  <label for="name">Name:</label>
+                  <input
+                    id="name"
+                    type="text"
+                    autofocus="on"
+                    name="personName"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input
+                    id="email"
+                    type="text"
+                    name="personEmail"
+                    placeholder="Email Address"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  />
+                </div>
+                <div>
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    required
+                    name="personMessage"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+              </fieldset>
+          </div>
+          <div class="item">
+            <p> Please feel free to contact or follow me: </p>
+            <ul>
+              <li> <a href="mailto: hoquen0397@gmail.com" target="_blank"> Email</a> </li>
+              <li> <a href="https://www.linkedin.com/in/nishat-hoque-30b08b10a/" target="_blank">LinkedIn</a></li>
+              <li> <a href="https://github.com/Nishat322" target="_blank">GitHub</a> </li>
+            </ul>
+            <img src="google_map.jpg" alt="Map of Queens" >
+          </div>
         </div>
-        <div class="item">
-          <p> Please feel free to contact or follow me: </p>
-          <ul class = 'contacts'>
-            <li> <a href="mailto: hoquen0397@gmail.com" target="_blank"> Email</a> </li>
-            <li> <a href="https://www.linkedin.com/in/nishat-hoque-30b08b10a/" target="_blank">LinkedIn</a></li>
-            <li> <a href="https://github.com/Nishat322" target="_blank">GitHub</a> </li>
-          </ul>
-          <img src="google_map.jpg" alt="Map of Queens" >
-        </div>
-      </div>
-    </article>
+      </section>
+    </div>
   </main>
 
   <!-- Footer with copyright -->
   <footer>
-    <p> ©Nishat Hoque </p>
+    <p> Copyright &copy; 2021 Nishat Hoque </p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
